@@ -1,0 +1,67 @@
+# macOS & Editor artifacts
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# IDEs / Editors
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+
+# Root-level environment/config secrets
+.env
+.env.*
+
+# Logs & diagnostics
+*.log
+logs/
+nohup.out
+*.stackdump
+
+# Node / Frontend (syncup-frontend)
+syncup-frontend/node_modules/
+syncup-frontend/dist/
+syncup-frontend/.turbo/
+syncup-frontend/.parcel-cache/
+syncup-frontend/.eslintcache
+syncup-frontend/coverage/
+syncup-frontend/*.tsbuildinfo
+
+# Backend (syncup-backend)
+syncup-backend/target/
+syncup-backend/.mvn/wrapper/maven-wrapper.jar
+syncup-backend/.mvn/wrapper/maven-wrapper.properties
+syncup-backend/mvnw
+syncup-backend/mvnw.cmd
+syncup-backend/logs/
+syncup-backend/*.log
+syncup-backend/syncup.db
+syncup-backend/hs_err_pid*.log
+
+# Generated audio uploads
+syncup-backend/uploads/audio/
+
+# Build artifacts
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# Coverage / reports
+coverage/
+reports/
+
+# Misc caches
+.cache/
+*.swp
+*.swo
+~$*
+
