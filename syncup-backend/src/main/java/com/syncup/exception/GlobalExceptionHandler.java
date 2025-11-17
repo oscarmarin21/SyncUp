@@ -2,6 +2,7 @@ package com.syncup.exception;
 
 import com.syncup.dto.ApiResponse;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.catalina.connector.ClientAbortException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -23,6 +24,13 @@ import java.util.Map;
 @Slf4j
 public class GlobalExceptionHandler {
     
+    @ExceptionHandler(ClientAbortException.class)
+    public void handleClientAbortException(ClientAbortException ex) {
+        // El cliente se desconectó durante la transferencia de datos
+        // No hay necesidad de enviar una respuesta, solo se registra a nivel DEBUG
+        log.debug("Cliente desconectado durante la transferencia: {}", ex.getMessage());
+    }
+
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<ApiResponse<?>> handleIllegalArgumentException(IllegalArgumentException ex) {
         log.error("IllegalArgumentException: {}", ex.getMessage());
@@ -60,4 +68,3 @@ public class GlobalExceptionHandler {
                 .body(ApiResponse.error(message));
     }
 }
-

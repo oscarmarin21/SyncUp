@@ -145,31 +145,53 @@ public class DataInitializer implements CommandLineRunner {
     
     private List<Cancion> crearCancionesDePrueba() {
         // Canciones variadas para tener datos de prueba interesantes
-        String intro = "/audio/syncup_intro.wav";
-        String groove = "/audio/syncup_groove.wav";
-        String chill = "/audio/syncup_chill.wav";
+        String anotherOneBite = "/audio/Queen – Another One Bites The Dust (Official Lyric Video).wav";
+        String bohemian = "/audio/queen--bohemian-rhapsody-official-video-remastered.wav";
+        String wewillrockyou = "/audio/Queen - We Will Rock You.wav";
+        String smellslike = "/audio/Nirvana - Smells Like Teen Spirit (Lyrics).wav";
+        String thriller = "/audio/Michael Jackson - Thriller (Official Video - Shortened Version).wav";
+        String billiejean = "/audio/Michael Jackson - Billie Jean (Official Video).wav";
+        String beatIt = "/audio/Michael Jackson - Beat It (Official 4K Video).wav";
+        String sweet = "/audio/Guns N' Roses - Sweet Child O' Mine (Lyrics).wav";
+        String takeiteasy = "/audio/Eagles - Take it Easy (Official Audio).wav";
+        String hotelcalifornia = "/audio/Eagles-Hotel California.wav";
+        String stairway = "/audio/Led Zeppelin - Stairway To Heaven (Official Audio).wav";
+        String likearolling = "/audio/Bob Dylan - Like a Rolling Stone (Official Audio).wav";
+        String imagine = "/audio/Imagine - John Lennon & The Plastic Ono Band (w The Flux Fiddlers) (Ultimate Mix 2018) - 4K REMASTER.wav";
+        String purpleRain = "/audio/Prince - Purple Rain (Lyrics).wav";
+        String superstition = "/audio/Superstition.wav";
+        String gimmeshelter = "/audio/The Rolling Stones - Gimme Shelter (Official Lyric Video).wav";
+        String adayinthelife = "/audio/The Beatles - A Day In The Life.wav";
+        String comfortablynumb = "/audio/Pink Floyd - Comfortably numb.wav";
+        String paintItBlack = "/audio/The Rolling Stones - Paint It, Black (Official Lyric Video).wav";
+        String freeBird = "/audio/Lynyrd Skynyrd - Free Bird (Official Audio).wav";
+
+
+
+
+
 
         Cancion[] cancionesArray = {
-            crearObtenerCancion("Bohemian Rhapsody", "Queen", "Rock", 1975, 355, intro),
-            crearObtenerCancion("Another One Bites the Dust", "Queen", "Rock", 1980, 216, groove),
-            crearObtenerCancion("We Will Rock You", "Queen", "Rock", 1977, 122, intro),
-            crearObtenerCancion("Billie Jean", "Michael Jackson", "Pop", 1983, 294, groove),
-            crearObtenerCancion("Thriller", "Michael Jackson", "Pop", 1982, 357, chill),
-            crearObtenerCancion("Beat It", "Michael Jackson", "Pop", 1983, 258, groove),
-            crearObtenerCancion("Hotel California", "Eagles", "Rock", 1977, 391, intro),
-            crearObtenerCancion("Take It Easy", "Eagles", "Rock", 1972, 211, chill),
-            crearObtenerCancion("Stairway to Heaven", "Led Zeppelin", "Rock", 1971, 482, intro),
-            crearObtenerCancion("Smells Like Teen Spirit", "Nirvana", "Grunge", 1991, 301, groove),
-            crearObtenerCancion("Sweet Child O' Mine", "Guns N' Roses", "Rock", 1988, 356, intro),
-            crearObtenerCancion("Like a Rolling Stone", "Bob Dylan", "Folk Rock", 1965, 366, chill),
-            crearObtenerCancion("Imagine", "John Lennon", "Rock", 1971, 183, chill),
-            crearObtenerCancion("Purple Rain", "Prince", "Pop Rock", 1984, 537, groove),
-            crearObtenerCancion("Superstition", "Stevie Wonder", "Funk", 1972, 267, groove),
-            crearObtenerCancion("Gimme Shelter", "The Rolling Stones", "Rock", 1969, 271, intro),
-            crearObtenerCancion("A Day in the Life", "The Beatles", "Rock", 1967, 335, chill),
-            crearObtenerCancion("Comfortably Numb", "Pink Floyd", "Progressive Rock", 1979, 384, intro),
-            crearObtenerCancion("Paint It Black", "The Rolling Stones", "Rock", 1966, 203, groove),
-            crearObtenerCancion("Free Bird", "Lynyrd Skynyrd", "Southern Rock", 1974, 554, intro)
+            crearObtenerCancion("Bohemian Rhapsody", "Queen", "Rock", 1975, 355, bohemian),
+            crearObtenerCancion("Another One Bites the Dust", "Queen", "Rock", 1980, 216, anotherOneBite),
+            crearObtenerCancion("We Will Rock You", "Queen", "Rock", 1977, 122, wewillrockyou),
+            crearObtenerCancion("Billie Jean", "Michael Jackson", "Pop", 1983, 294, billiejean),
+            crearObtenerCancion("Thriller", "Michael Jackson", "Pop", 1982, 357, thriller),
+            crearObtenerCancion("Beat It", "Michael Jackson", "Pop", 1983, 258, beatIt),
+            crearObtenerCancion("Hotel California", "Eagles", "Rock", 1977, 391, hotelcalifornia),
+            crearObtenerCancion("Take It Easy", "Eagles", "Rock", 1972, 211, takeiteasy),
+            crearObtenerCancion("Stairway to Heaven", "Led Zeppelin", "Rock", 1971, 482, stairway),
+            crearObtenerCancion("Smells Like Teen Spirit", "Nirvana", "Grunge", 1991, 301, smellslike),
+            crearObtenerCancion("Sweet Child O' Mine", "Guns N' Roses", "Rock", 1988, 356, sweet),
+            crearObtenerCancion("Like a Rolling Stone", "Bob Dylan", "Folk Rock", 1965, 366, likearolling),
+            crearObtenerCancion("Imagine", "John Lennon", "Rock", 1971, 183, imagine),
+            crearObtenerCancion("Purple Rain", "Prince", "Pop Rock", 1984, 537, purpleRain),
+            crearObtenerCancion("Superstition", "Stevie Wonder", "Funk", 1972, 267, superstition),
+            crearObtenerCancion("Gimme Shelter", "The Rolling Stones", "Rock", 1969, 271, gimmeshelter),
+            crearObtenerCancion("A Day in the Life", "The Beatles", "Rock", 1967, 335, adayinthelife),
+            crearObtenerCancion("Comfortably Numb", "Pink Floyd", "Progressive Rock", 1979, 384, comfortablynumb),
+            crearObtenerCancion("Paint It Black", "The Rolling Stones", "Rock", 1966, 203, paintItBlack),
+            crearObtenerCancion("Free Bird", "Lynyrd Skynyrd", "Southern Rock", 1974, 554, freeBird)
         };
         
         return List.of(cancionesArray);
