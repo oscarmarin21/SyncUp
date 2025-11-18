@@ -79,5 +79,22 @@ export const socialService = {
 
     return [];
   },
+
+  /**
+   * Busca usuarios por nombre o username.
+   * Sirve para el buscador de usuarios.
+   */
+  async searchUsers(query: string): Promise<User[]> {
+    const response = await api.get<ApiResponse<User[]>>(`/users/search`, {
+      params: { query }
+    });
+
+    if (response.data.success && response.data.data) {
+      return response.data.data;
+    }
+
+    return [];
+  },
+
 };
 
